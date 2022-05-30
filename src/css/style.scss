@@ -1,0 +1,18 @@
+// ==========================================================================
+// Imports
+// ==========================================================================
+@import 'utils/variables';
+@import 'utils/mixins';
+@import 'components/banner';
+
+// ==========================================================================
+// Basic definitions
+// ==========================================================================
+
+.learnmoreBtn {
+ font-weight: bold;
+ color: #2189ff;
+ text-decoration: underline;
+ font-family: 'SamsungOne700';
+ cursor: pointer;
+}
