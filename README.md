@@ -12,5 +12,18 @@ Simple Gulp, Sass and JS boiletplate
 
 ## Test
 
-Use additional QA parameters of Adobe Target (see above)
-Such as: https://www.samsung.com/ie/smartphones/all-smartphones/?galaxy-s+galaxy-z&at_preview_token=mCC5Cr9vqdC4qmcTlXfiQXXoF8PgTBKc0I00Y3g6O2U%3D&at_preview_index=1_1&at_preview_listed_activities_only=true
+https://log.cheileu.com/browse/GBS22328002-181
+
+## Background
+
+The test has been validated and it has been pushed 100% across the premium smartphones, including S22, Z Fold3, and Z Flip3 etc.
+
+We would like to replicate this experience for the latest A series mid range phones to encourage more customers to complete the trade in journey and complete their final purchase. Here is the previous test delivered in the cart - https://log.cheileu.com/browse/GBS22328002-42
+
+All of these tests have been merged into one. So now it targets all IM prodcuts
+(Galaxy Z Flip, Galaxy Z Fold3 5G, Galaxy S22 Ultra, Galaxy A53 5G, Galaxy A52s 5G, Galaxy S22 5G, Galalxy S22+, Tab S8, Tab S8 Ultra) Trade in enhancement Cart
+
+So all you need to do is update this repo and you good.
+
+This is also using the new json api thats uploaded to AWS
+https://d1vp9jkpfdwr15.cloudfront.net/tradeIn/tradeIn.json
