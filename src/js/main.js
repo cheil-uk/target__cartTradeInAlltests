@@ -100,7 +100,7 @@ cheillondon.targetBoilerplate = (function () {
 				'Galaxy A53 5G',
 				'Galaxy A52s 5G',
 				'Galaxy S22 5G',
-				'Galalxy S22+',
+				'Galaxy S22+',
 				'Tab S8',
 				'Tab S8 Ultra']
 			let currentCartItems = []
@@ -144,81 +144,93 @@ cheillondon.targetBoilerplate = (function () {
 						cartItemNames.forEach((cartName) => {
 
 							if (cartName.innerText.includes(text)) {
+
 								const parentCartContainer = cartName.parentElement.parentElement.parentElement
 								const tradeInContainer = parentCartContainer.querySelector('div:nth-child(2) > div.service-item__details > div > div');
 								const tradeInBtn = parentCartContainer.querySelector('div:nth-child(2) > div.service-item__actions > div > button');
-								const discountBtn = tradeInBtn.querySelector('.action-text')
+								const discountBtn = tradeInBtn.querySelector('.action-text');
+
 
 								if (text.includes('Galaxy Z Flip3')) {
 
-										tradeInContainer.innerText = `Trade in your old device for an instant discount of up to £${product.GalaxyFlip35G.tradeInValue} off your order`
-										tradeInContainer.after(learnMore)
-										footerTerms(`Purchase from Samsung Shop Online by ${product.GalaxyFlip35G.dateEnd}. £${product.GalaxyFlip35G.tradeInValue} value based on Galaxy S21 Ultra 512GB. Value dependent on model and condition. Charges apply if you do not send us your trade-in device. T&Cs apply.`)
-										tracking(learnMore)
 										discountBtn.innerText = 'Add Discount'
+										tradeInContainer.innerText = `Trade in your old device for an instant discount of up to £${product.TradeIn[0].GalaxyFlip35G.tradeInValue} off your order`
+										tradeInContainer.after(learnMore)
+										footerTerms(`Purchase from Samsung Shop Online by ${product.TradeIn[0].GalaxyFlip35G.dateEnd}. £${product.TradeIn[0].GalaxyFlip35G.tradeInValue} value based on Galaxy S21 Ultra 512GB. Value dependent on model and condition. Charges apply if you do not send us your trade-in device. T&Cs apply.`)
+										tracking(learnMore)
 										learnMore.onclick = () => {tradeInBtn.click()}
 
 								} else if (text.includes('Galaxy Z Fold3 5G')) {
 
+										discountBtn.innerText = 'Add Discount'
 										tradeInContainer.after(learnMore)
 										tradeInContainer.innerText = `Trade in your old device for an instant discount of up to £${product.GalaxyFold35G.tradeInValue} off your order`
-										footerTerms(`Purchase from Samsung Shop Online by ${product.GalaxyFold35G.dateEnd}. £${product.GalaxyFold35G.tradeInValue} value based on Galaxy S21 Ultra 512GB. Value dependent on model and condition. Charges apply if you do not send us your trade-in device. T&Cs apply.`)
+										footerTerms(`Purchase from Samsung Shop Online by ${product.TradeIn[0].GalaxyFold35G.dateEnd}. £${product.TradeIn[0].GalaxyFold35G.tradeInValue} value based on Galaxy S21 Ultra 512GB. Value dependent on model and condition. Charges apply if you do not send us your trade-in device. T&Cs apply.`)
 										tracking(learnMore)
-										discountBtn.innerText = 'Add Discount'
 										learnMore.onclick = () => {tradeInBtn.click()}
 
 								} else if (text.includes('Galaxy A53 5G')) {
 
-										tradeInContainer.innerText = `Up to £${product.GalaxyA53.tradeInValue} off the new Galaxy A53 5G with Trade In`
-										tradeInContainer.after(learnMore)
-										footerTerms(`Purchase from Samsung.com by ${product.GalaxyA53.dateEnd}. £${product.GalaxyA53.tradeInValue} value based on Galaxy A80. Values vary by model and condition . Purchased device will be blocked if you don't send us your trade-in device. T&Cs apply.`)
-										tracking(learnMore)
 										discountBtn.innerText = 'Add Discount'
+										tradeInContainer.innerText = `Up to £${product.TradeIn[0].GalaxyA53.tradeInValue} off the new Galaxy A53 5G with Trade In`
+										tradeInContainer.after(learnMore)
+										footerTerms(`Purchase from Samsung.com by ${product.GalaxyA53.dateEnd}. £${product.TradeIn[0].GalaxyA53.tradeInValue} value based on Galaxy A80. Values vary by model and condition . Purchased device will be blocked if you don't send us your trade-in device. T&Cs apply.`)
+										tracking(learnMore)
 										learnMore.onclick = () => {tradeInBtn.click()}
 
 								} else if (text.includes('Galaxy A52s 5G')) {
 
+										discountBtn.innerText = 'Add Discount'
 										tradeInContainer.innerText = `Up to £100 off the new Galaxy A52s 5G with Trade In`
 										tradeInContainer.after(learnMore)
 										footerTerms(`Purchase from Samsung.com by 29/04/22. £100 value based on Galaxy A80. Values vary by model and condition . Purchased device will be blocked if you don't send us your trade-in device. T&Cs apply.`)
 										tracking(learnMore)
-										discountBtn.innerText = 'Add Discount'
 										learnMore.onclick = () => {tradeInBtn.click()}
 
 								} else if (text.includes('Galaxy S22 5G')) {
 
-										tradeInContainer.innerText = `Enjoy a guaranteed £${product.GalaxyS22.tradeInValue} off the Galaxy S22 when you trade in any Android phone in any condition`
-										tradeInContainer.after(learnMore)
-										footerTerms(`Purchase from Samsung.com by ${product.GalaxyS22.dateEnd}. £${product.GalaxyS22.tradeInValue} based on any working or broken Android phone. Purchased phone will be blocked if you don't send us your trade-in device. T&Cs apply.`)
-										tracking(learnMore)
 										discountBtn.innerText = 'Add Discount'
+										tradeInContainer.innerText = `Enjoy a guaranteed £${product.TradeIn[0].GalaxyS22.tradeInValue} off the Galaxy S22 when you trade in any Android phone in any condition`
+										tradeInContainer.after(learnMore)
+										footerTerms(`Purchase from Samsung.com by ${product.TradeIn[0].GalaxyS22.dateEnd}. £${product.TradeIn[0].GalaxyS22.tradeInValue} based on any working or broken Android phone. Purchased phone will be blocked if you don't send us your trade-in device. T&Cs apply.`)
+										tracking(learnMore)
+										learnMore.onclick = () => {tradeInBtn.click()}
+
+								} else if (text.includes('Galaxy S22+')) {
+
+										discountBtn.innerText = 'Add Discount'
+										tradeInContainer.innerText = `Trade in your old device for an instant discount of up to £${product.TradeIn[0].GalaxyS22Plus.tradeInValue} off your order*`
+										tradeInContainer.after(learnMore)
+										footerTerms(`Purchase from Samsung.com by ${product.TradeIn[0].GalaxyS22PlusdateEnd}. £${product.TradeIn[0].GalaxyS22Plus.tradeInValue} based on any working or broken Android phone. Values can vary by model and condition of trade-in device, and on purchases of exclusive colour devices. Purchased phone will be blocked if you don't send us your trade-in device. T&Cs apply.`)
+										tracking(learnMore)
 										learnMore.onclick = () => {tradeInBtn.click()}
 
 								} else if (text.includes('Galaxy S22 Ultra')) {
 
-										tradeInContainer.innerText = `Enjoy a guaranteed £${product.GalaxyS22Ultra.tradeInValue} off the Galaxy S22 when you trade in any Android phone in any condition`
-										tradeInContainer.after(learnMore)
-										footerTerms(`Purchase from Samsung.com by ${product.GalaxyS22Ultra.dateEnd}. £${product.GalaxyS22Ultra.tradeInValue} based on any working or broken Android phone. Purchased phone will be blocked if you don't send us your trade-in device. T&Cs apply.`)
-										tracking(learnMore)
 										discountBtn.innerText = 'Add Discount'
+										tradeInContainer.innerText = `Trade in your old device for an instant discount of up to £${product.TradeIn[0].GalaxyS22Ultra.tradeInValue} off your order*`
+										tradeInContainer.after(learnMore)
+										footerTerms(`Purchase from Samsung.com by ${product.GalaxyS22Ultra.dateEnd}. £${product.TradeIn[0].GalaxyS22Ultra.tradeInValue} based on any working or broken Android phone. Values can vary by model and condition of trade-in device, and on purchases of exclusive colour devices. Purchased phone will be blocked if you don't send us your trade-in device. T&Cs apply.`)
+										tracking(learnMore)
+
 										learnMore.onclick = () => {tradeInBtn.click()}
 
 								} else if (text.includes('Tab S8')) {
 
-										tradeInContainer.innerText = `Trade in your old device for an instant discount of up to £${product.GalaxyTabS8.tradeInValue} off your order`
-										tradeInContainer.after(learnMore)
-										footerTerms(`Purchase from Samsung Shop Online by ${product.GalaxyTabS8.dateEnd}. £${product.GalaxyTabS8.tradeInValue} value based on iPad Pro 5 (2021). Values vary based on model and condition. Purchased tablet will be blocked if you don't send us your trade-in device. T&Cs apply`)
-										tracking(learnMore)
 										discountBtn.innerText = 'Add Discount'
+										tradeInContainer.innerText = `Trade in your old device for an instant discount of up to £${product.TradeIn[0].GalaxyTabS8.tradeInValue} off your order`
+										tradeInContainer.after(learnMore)
+										footerTerms(`Purchase from Samsung Shop Online by ${product.TradeIn[0].GalaxyTabS8.dateEnd}. £${product.TradeIn[0].GalaxyTabS8.tradeInValue} value based on iPad Pro 5 (2021). Values vary based on model and condition. Purchased tablet will be blocked if you don't send us your trade-in device. T&Cs apply`)
+										tracking(learnMore)
 										learnMore.onclick = () => {tradeInBtn.click()}
 
 								} else if (text.includes('Tab S8 Ultra')) {
 
-										tradeInContainer.innerText = `Trade in your old device for an instant discount of up to £${product.GalaxyTabS8Ultra.tradeInValue} off your order`
-										tradeInContainer.after(learnMore)
-										footerTerms(`Purchase from Samsung Shop Online by ${product.GalaxyTabS8Ultra.dateEnd}. £${product.GalaxyTabS8Ultra.tradeInValue} value based on iPad Pro 5 (2021). Values vary based on model and condition. Purchased tablet will be blocked if you don't send us your trade-in device. T&Cs apply.`)
-										tracking(learnMore)
 										discountBtn.innerText = 'Add Discount'
+										tradeInContainer.innerText = `Trade in your old device for an instant discount of up to £${product.TradeIn[0].GalaxyTabS8Ultra.tradeInValue} off your order`
+										tradeInContainer.after(learnMore)
+										footerTerms(`Purchase from Samsung Shop Online by ${product.TradeIn[0].GalaxyTabS8Ultra.dateEnd}. £${product.TradeIn[0].GalaxyTabS8Ultra.tradeInValue} value based on iPad Pro 5 (2021). Values vary based on model and condition. Purchased tablet will be blocked if you don't send us your trade-in device. T&Cs apply.`)
+										tracking(learnMore)
 										learnMore.onclick = () => {tradeInBtn.click()}
 
 								} else {
@@ -228,8 +240,6 @@ cheillondon.targetBoilerplate = (function () {
 						})
 					})
 				})
-
-
 			}
 
 
