@@ -156,7 +156,7 @@ cheillondon.targetBoilerplate = (function () {
 										discountBtn.innerText = 'Add Discount'
 										tradeInContainer.innerText = `Trade in your old device for an instant discount of up to £${product.TradeIn[0].GalaxyFlip35G.tradeInValue} off your order`
 										tradeInContainer.after(learnMore)
-										footerTerms(`Purchase from Samsung Shop Online by ${product.TradeIn[0].GalaxyFlip35G.dateEnd}. £${product.TradeIn[0].GalaxyFlip35G.tradeInValue} value based on Galaxy S21 Ultra 512GB. Value dependent on model and condition. Charges apply if you do not send us your trade-in device. T&Cs apply.`)
+										footerTerms(`Purchase from Samsung Shop Online by ${product.TradeIn[0].GalaxyFlip35G.dateEnd}. £${product.TradeIn[0].GalaxyFlip35G.tradeInValue} value based on any Android smartphone, in any condition. Charges apply if you do not send us your trade-in device. T&Cs apply.`)
 										tracking(learnMore)
 										learnMore.onclick = () => {tradeInBtn.click()}
 
@@ -164,7 +164,7 @@ cheillondon.targetBoilerplate = (function () {
 
 										discountBtn.innerText = 'Add Discount'
 										tradeInContainer.after(learnMore)
-										tradeInContainer.innerText = `Trade in your old device for an instant discount of up to £${product.GalaxyFold35G.tradeInValue} off your order`
+										tradeInContainer.innerText = `Trade in your old device for an instant discount of up to £${product.TradeIn[0].GalaxyFold35G.tradeInValue} off your order`
 										footerTerms(`Purchase from Samsung Shop Online by ${product.TradeIn[0].GalaxyFold35G.dateEnd}. £${product.TradeIn[0].GalaxyFold35G.tradeInValue} value based on Galaxy S21 Ultra 512GB. Value dependent on model and condition. Charges apply if you do not send us your trade-in device. T&Cs apply.`)
 										tracking(learnMore)
 										learnMore.onclick = () => {tradeInBtn.click()}
@@ -174,16 +174,16 @@ cheillondon.targetBoilerplate = (function () {
 										discountBtn.innerText = 'Add Discount'
 										tradeInContainer.innerText = `Up to £${product.TradeIn[0].GalaxyA53.tradeInValue} off the new Galaxy A53 5G with Trade In`
 										tradeInContainer.after(learnMore)
-										footerTerms(`Purchase from Samsung.com by ${product.GalaxyA53.dateEnd}. £${product.TradeIn[0].GalaxyA53.tradeInValue} value based on Galaxy A80. Values vary by model and condition . Purchased device will be blocked if you don't send us your trade-in device. T&Cs apply.`)
+										footerTerms(`Purchase from Samsung.com by ${product.TradeIn[0].GalaxyA53.dateEnd}. £${product.TradeIn[0].GalaxyA53.tradeInValue} value based on Galaxy A80. Values vary by model and condition . Purchased device will be blocked if you don't send us your trade-in device. T&Cs apply.`)
 										tracking(learnMore)
 										learnMore.onclick = () => {tradeInBtn.click()}
 
 								} else if (text.includes('Galaxy A52s 5G')) {
 
 										discountBtn.innerText = 'Add Discount'
-										tradeInContainer.innerText = `Up to £100 off the new Galaxy A52s 5G with Trade In`
+										tradeInContainer.innerText = `Up to £${product.TradeIn[0].GalaxyA52.tradeInValue} off the new Galaxy A52s 5G with Trade In`
 										tradeInContainer.after(learnMore)
-										footerTerms(`Purchase from Samsung.com by 29/04/22. £100 value based on Galaxy A80. Values vary by model and condition . Purchased device will be blocked if you don't send us your trade-in device. T&Cs apply.`)
+										footerTerms(`Purchase from Samsung.com by ${product.TradeIn[0].GalaxyA52.dateEnd}. £${product.TradeIn[0].GalaxyA52.tradeInValue} value based on Galaxy A80(2019). Values vary by model and condition . Purchased device will be blocked if you don't send us your trade-in device. T&Cs apply.`)
 										tracking(learnMore)
 										learnMore.onclick = () => {tradeInBtn.click()}
 
@@ -201,7 +201,7 @@ cheillondon.targetBoilerplate = (function () {
 										discountBtn.innerText = 'Add Discount'
 										tradeInContainer.innerText = `Trade in your old device for an instant discount of up to £${product.TradeIn[0].GalaxyS22Plus.tradeInValue} off your order*`
 										tradeInContainer.after(learnMore)
-										footerTerms(`Purchase from Samsung.com by ${product.TradeIn[0].GalaxyS22PlusdateEnd}. £${product.TradeIn[0].GalaxyS22Plus.tradeInValue} based on any working or broken Android phone. Values can vary by model and condition of trade-in device, and on purchases of exclusive colour devices. Purchased phone will be blocked if you don't send us your trade-in device. T&Cs apply.`)
+										footerTerms(`Purchase from Samsung.com by ${product.TradeIn[0].GalaxyS22Plus.dateEnd}. £${product.TradeIn[0].GalaxyS22Plus.tradeInValue} based on any working or broken Android phone. Values can vary by model and condition of trade-in device, and on purchases of exclusive colour devices. Purchased phone will be blocked if you don't send us your trade-in device. T&Cs apply.`)
 										tracking(learnMore)
 										learnMore.onclick = () => {tradeInBtn.click()}
 
@@ -210,7 +210,7 @@ cheillondon.targetBoilerplate = (function () {
 										discountBtn.innerText = 'Add Discount'
 										tradeInContainer.innerText = `Trade in your old device for an instant discount of up to £${product.TradeIn[0].GalaxyS22Ultra.tradeInValue} off your order*`
 										tradeInContainer.after(learnMore)
-										footerTerms(`Purchase from Samsung.com by ${product.GalaxyS22Ultra.dateEnd}. £${product.TradeIn[0].GalaxyS22Ultra.tradeInValue} based on any working or broken Android phone. Values can vary by model and condition of trade-in device, and on purchases of exclusive colour devices. Purchased phone will be blocked if you don't send us your trade-in device. T&Cs apply.`)
+										footerTerms(`Purchase from Samsung.com by ${product.TradeIn[0].GalaxyS22Ultra.dateEnd}. £${product.TradeIn[0].GalaxyS22Ultra.tradeInValue} based on any working or broken Android phone. Values can vary by model and condition of trade-in device, and on purchases of exclusive colour devices. Purchased phone will be blocked if you don't send us your trade-in device. T&Cs apply.`)
 										tracking(learnMore)
 
 										learnMore.onclick = () => {tradeInBtn.click()}
